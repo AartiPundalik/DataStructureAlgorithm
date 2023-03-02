@@ -14,7 +14,8 @@ namespace DataStructureAlgorithm
             while (flag)
             {
                 Console.WriteLine("Welcome\n" +
-                     "Choose 3L For BUbble sorting");
+                     "Choose 3L For BUbble sorting"+
+                    " Choose For Insertion Sorting");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -22,6 +23,9 @@ namespace DataStructureAlgorithm
                         BubbleSort.Sort();
                         break;
                     case 2:
+                        InsertionSort.DisplayInsertionSort();
+                        break;
+                        case 3:
                         flag = false;
                         break;
 
