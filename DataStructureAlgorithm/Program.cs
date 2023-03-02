@@ -14,8 +14,9 @@ namespace DataStructureAlgorithm
             while (flag)
             {
                 Console.WriteLine("Welcome\n" +
-                     "Choose 3L For BUbble sorting"+
-                    " Choose For Insertion Sorting");
+                     "Choose 3L For BUbble sorting" +
+                    " Choose For Insertion Sorting" +
+                    " Choose For Prime Numbers");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option)
                 {
@@ -25,7 +26,10 @@ namespace DataStructureAlgorithm
                     case 2:
                         InsertionSort.DisplayInsertionSort();
                         break;
-                        case 3:
+                    case 3:
+                        PrimeNumber.DisplayPrimeNumbers();
+                        break;
+                        case 4:
                         flag = false;
                         break;
 
